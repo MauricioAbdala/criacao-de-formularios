@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body style="background-color: rgb(130, 177, 161);">
+    <form>
+       <section>
+        <div>
+        <label for="nome"><p>Nome</p></label>
+        <input id="nome" type="text" name="seu_nome" placeholder="Digite seu nome aqui..." required/>
+        </div>
+        <label for="email"><p>Email</p></label>
+        <input id="email"  type="email" name="seu_email" placeholder="Digite seu email aqui..." required/>  
+        
+        <p>O que te motivou participar do evento?</p>
+        <textarea id="input_desc" placeholder="Descreva aqui..." cols="30" rows="5" ></textarea> 
+       </section>
+
+       <section>
+        <p>Selecione seu módulo</p>
+        <select id="input_modulo">
+            <option>Módulo 1</option>
+            <option>Módulo 2</option>
+            <option>Módulo 3</option>
+            <option>Módulo 4</option>
+            <option>Módulo 5</option>
+            <option>Módulo 6</option>
+            <option selected>Escolher módulo</option>
+        </select>
+      <div>
+        <label for="input_password"><p>Digite uma senha</p></label>
+        <input id="input_password"  type="password" placeholder="Digite sua senha aqui..." required/>
+      </div>
+            
+        <label for="conf_password"><p>Confirme a senha</p></label>
+        <input id="conf_password" type="password" placeholder="Confirme sua senha..." required/>
+        
+        <p>Deseja receber novidades emn seu email?</p>
+        <label for="radio_sim">Sim</label>
+        <input id="radio_sim"  type="radio" name="jornal"/>
+
+        <label for="radio_nao">Não</label>
+        <input id="radio_nao" type="radio" name="jornal"/>
+        
+        <input type="submit" value="Cadastrar"/>
+       </section>
+    </form>
+</body>
+</html>
